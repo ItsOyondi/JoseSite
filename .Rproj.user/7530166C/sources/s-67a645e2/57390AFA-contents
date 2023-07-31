@@ -1,0 +1,32 @@
+---
+title: "Josephat Oyondi"
+image: "sized_Josephat.png"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/josephat-oyondi-177732a5/ target='_blank'"
+  - label: Twitter
+    url: "https://twitter.com/ItsOyondi/ target='_blank'"
+  - label: GitHub
+    url: "https://github.com/ItsOyondi target='_blank'"
+output:
+  postcards::trestles
+site: distill::distill_website
+---
+ 
+## Bio
+
+Josephat Oyondi is a data scientist at Innovative Toll Solutions LLC. My expertise lies in data cleaning, analysis, and building machine learning models to extract valuable insights from complex datasets, driving informed business decisions. Additionally, I'm adept at building robots for business process automation using UiPath, streamlining operations, and enhancing efficiency. With certifications in SAS and UiPath Advanced Developer, I am dedicated to staying at the cutting edge of technology. I'm passionate about leveraging data and automation to create innovative solutions that solve real-world challenges and contribute to business success. Always eager to explore new opportunities, I'm a continuous learner, seeking to make a positive impact through my skills and knowledge.
+
+## Education
+
+**Grand Valley State University** | Allendale, MI
+
+Masters in Data Science & Analytics | January 2022 - December 2023
+
+**Chuka University** | Chuka, Ke
+
+B.S. in Computer Science | September 2013 - November 2017
+
+## Experience
+
+**Innovative Toll Solutions** | Data Scientist | June 2023 - Present

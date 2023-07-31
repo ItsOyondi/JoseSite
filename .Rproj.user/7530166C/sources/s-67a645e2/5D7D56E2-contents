@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "This site highlights top projects i have completed in the past, the ones i am working on and my future plans of projects to undertake. ",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2023-05-15T18:56:44-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Josephat Oyondi",
+      "author": [],
+      "contents": "\n\n          \n          \n          Statistical Modelling &amp; Regression\n          \n          \n          Home\n          About\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Josephat Oyondi\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Twitter\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Bio\n            Frank Hermosillo studies neural networks and their applications at Google Brain. His research focuses on differentiable network pruning approximation and decentralized gradient inversion mechanics. He frequently collaborates with researchers who study machine learning, computer vision, and cognitive science. His work has been featured in WIRED, The Atlantic, Newsweek, and The New York Times Magazine.\n            \n            \n            Education\n            Grand Valley State University | Allendale, MI\n            Masters in Data Science & Analytics | January 2022 - December 2023\n            Chuka University | Chuka, Ke\n            B.S. in Computer Science | September 2013 - November 2017\n            \n            \n            Experience\n            Innovative Toll Solutions | Data Scientist | June 2023 - Present\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Josephat Oyondi\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      Twitter\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                  \n              \n            \n            \n              \n              Bio\n              Frank Hermosillo studies neural networks and their applications at Google Brain. His research focuses on differentiable network pruning approximation and decentralized gradient inversion mechanics. He frequently collaborates with researchers who study machine learning, computer vision, and cognitive science. His work has been featured in WIRED, The Atlantic, Newsweek, and The New York Times Magazine.\n              \n              \n              Education\n              Grand Valley State University | Allendale, MI\n              Masters in Data Science & Analytics | January 2022 - December 2023\n              Chuka University | Chuka, Ke\n              B.S. in Computer Science | September 2013 - November 2017\n              \n              \n              Experience\n              Innovative Toll Solutions | Data Scientist | June 2023 - Present\n              \n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2023-07-30T21:42:34-04:00"
+    }
+  ],
+  "collections": []
+}

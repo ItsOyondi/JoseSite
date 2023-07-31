@@ -1,0 +1,29 @@
+---
+title: "About this site"
+description: | 
+  This site highlights top projects i have completed in the past, the ones i am working on and my future plans of projects to undertake. 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Portfolio Goal Setting
+
+## Main Goal
+__To create an interactive website to keep a record of my projects, showcase my previous projects, current ones, and future projects.__
+
+## Rationale
+Having worked in the technology industry for a long time, I understand the significance of showing potential employers your previous skills and what you can do. In my current job, my interviewers wanted to know the kind of work I have been doing before, and the only way I was able to show was to share my GitHub link which was a little difficult to navigate. I will create a website that is linked with my various GitHub projects whereby I will write summaries of the projects and include visualizations through markdown.
+
+## Plan
+1. Identify all the projects I have worked on this course and sort them based on the most successful or well-organized project.
+2. Publish the projects in my GitHub account.
+3. Create a website using R markdown and find a suitable template available in GitHub pages.
+4. Extract links for all my major projects from GitHub.
+5. Connect each project to my portfolio.
+6. I plan to keep on updating it with new projects.
+
+## Type of portfolio
+An interactive website built with R markdown.

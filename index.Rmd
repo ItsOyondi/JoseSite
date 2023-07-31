@@ -1,6 +1,7 @@
 ---
-title: "Oyondi's Portfolio"
-image: "sigridur.jpg"
+name: "Oyondi Portfolio"
+title: "Josephat Oyondi"
+image: "sized_Josephat.png"
 links:
   - label: LinkedIn
     url: "https://www.linkedin.com/in/josephat-oyondi-177732a5/ target='_blank'"
@@ -9,28 +10,20 @@ links:
   - label: GitHub
     url: "https://github.com/ItsOyondi target='_blank'"
 output:
-  postcards::solana
+  postcards::trestles
+site: distill::distill_website
 ---
  
-## Major Projects completed
-### Project 1
-Sigríður Björndotter is a musician, vocalist, and live entertainment consultant
-living in Buenos Aires, Argentina. Her writing has appeared in Rolling Stone.
+## Introduction
 
-### Project 2
-Sigríður Björndotter is a musician, vocalist, and live entertainment consultant
-living in Buenos Aires, Argentina. Her writing has appeared in Rolling Stone.
+Josephat Oyondi is a data scientist at Innovative Toll Solutions LLC. My expertise lies in data cleaning, analysis, and building machine learning models to extract valuable insights from complex datasets, driving informed business decisions. Additionally, I'm adept at building robots for business process automation using UiPath, streamlining operations, and enhancing efficiency. With certifications in SAS and UiPath Advanced Developer, I am dedicated to staying at the cutting edge of technology. I'm passionate about leveraging data and automation to create innovative solutions that solve real-world challenges and contribute to business success. Always eager to explore new opportunities, I'm a continuous learner, seeking to make a positive impact through my skills and knowledge.
+
+## Major Projects completed
+### Mini-Competition 1
+
+### Mini-Competition 2
 
 ### Project 3
-Sigríður Björndotter is a musician, vocalist, and live entertainment consultant
-living in Buenos Aires, Argentina. Her writing has appeared in Rolling Stone.
 
 ### Project 4
-Sigríður Björndotter is a musician, vocalist, and live entertainment consultant
-living in Buenos Aires, Argentina. Her writing has appeared in Rolling Stone.
-
-### Project 5
-Sigríður Björndotter is a musician, vocalist, and live entertainment consultant
-living in Buenos Aires, Argentina. Her writing has appeared in Rolling Stone.
-
 

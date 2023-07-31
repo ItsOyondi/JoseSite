@@ -1,7 +1,7 @@
 name: "JoseSite"
-title: "Statistical Modelling &amp; Regression"
+title: "Oyondi Portfolio"
 description: |
-  Statistical Modelling &amp; Regression
+  Oyondi's Portfolio
 output_dir: "docs"
 navbar:
   right:

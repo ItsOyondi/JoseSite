@@ -702,11 +702,42 @@
             </div>
             <div id="major-projects-completed" class="section level2">
             <h2>Major Projects completed</h2>
-            <div id="mini-competition-1" class="section level3">
-            <h3>Mini-Competition 1</h3>
+            <div id="mini-competition-1-linear-regression" class="section level3">
+            <h3>Mini-Competition 1: Linear regression</h3>
+            <p><strong>Main Aim: To evaluate the relationship between parent/guradian involvement in student’s education and performance</strong></p>
+            <p>The following are the steps we used in completing this project.</p>
+            <p><em>Step 1: Exploratory data analysis</em></p>
+            <p>We created different visualizations to examine the distribution of responses on school preferences, mode of learning such as in-person and virtual classes and others as shown in the screenshot below: <img src="explora_1.png" alt="Parent involvement and virtual learning" /></p>
+            <p><em>Step 2:Choosing the dependent and independent variables</em></p>
+            <p>There were multiple variables, however, we selected the following as the independent variables for exploration and testing the linear model: CHLDNT, RACEETH, P1SEX, PARGRADEX, DSBLTY, TTLHHINC,EINTNET The predicted variable was: SEGRADES which was used as a measure of student performance.</p>
+            <p><em>Step 3: Correlation analysis between variables and choosing most suitable explanatory variables using ggpairs() </em></p>
+            <div class="figure">
+            <img src="explora_2.png" alt="" />
+            <p class="caption">Correlational Analysis</p>
             </div>
-            <div id="mini-competition-2" class="section level3">
-            <h3>Mini-Competition 2</h3>
+            <p><em>Step 4: Final Model selection</em></p>
+            <pre><code>SEGRADES = β0 + β1CHLDNT + β2RACEETH + β3P1SEX + β4PARGRADEX + β5DSBLTY + β6TTLHHINC + β7EINTNET
+            </code></pre>
+            <p>There was no correlation between the predictors, meaning they can be used within the model in determining the students performance (grades during a school year).</p>
+            </div>
+            <div id="major-findings" class="section level3">
+            <h3>Major Findings</h3>
+            <ol style="list-style-type: decimal">
+            <li><p>CHLDNT (internet usage by a child in learning activities), DSBLTY (Child with disability) and P1SEX (gender of parent at home) p-values do not show any significance in predicting the child performance from virtual learning.</p></li>
+            <li><p>EINTNET, TTLHHINC, PARGRADEX and RACEETH were therefore suitable in predicting the students who most benefited from virtual learning.</p></li>
+            <li><p>Most students were white non-hispanic, then hispanic, black non-hispanic, and asian.</p></li>
+            </ol>
+            <p>4.Higher education of parents or gardiuns (Vocational/technical education after high school or some college, College graduate, Graduate or professional school) benefited more.</p>
+            <ol start="5" style="list-style-type: decimal">
+            <li>Children from families with high total household income ($75,001 to $100,000, $100,001 to $150,000, $150,001 to $200,000) benefited more.</li>
+            </ol>
+            </div>
+            <div id="conclusion" class="section level3">
+            <h3>Conclusion</h3>
+            <p>Majority of the students who benefited did not have online classes. This means, most of the successful child’s parents preferred child interaction with teachers.</p>
+            </div>
+            <div id="mini-competition-2-classification" class="section level3">
+            <h3>Mini-Competition 2: Classification</h3>
             </div>
             <div id="project-3" class="section level3">
             <h3>Project 3</h3>
@@ -760,11 +791,42 @@
               </div>
               <div id="major-projects-completed" class="section level2">
               <h2>Major Projects completed</h2>
-              <div id="mini-competition-1" class="section level3">
-              <h3>Mini-Competition 1</h3>
+              <div id="mini-competition-1-linear-regression" class="section level3">
+              <h3>Mini-Competition 1: Linear regression</h3>
+              <p><strong>Main Aim: To evaluate the relationship between parent/guradian involvement in student’s education and performance</strong></p>
+              <p>The following are the steps we used in completing this project.</p>
+              <p><em>Step 1: Exploratory data analysis</em></p>
+              <p>We created different visualizations to examine the distribution of responses on school preferences, mode of learning such as in-person and virtual classes and others as shown in the screenshot below: <img src="explora_1.png" alt="Parent involvement and virtual learning" /></p>
+              <p><em>Step 2:Choosing the dependent and independent variables</em></p>
+              <p>There were multiple variables, however, we selected the following as the independent variables for exploration and testing the linear model: CHLDNT, RACEETH, P1SEX, PARGRADEX, DSBLTY, TTLHHINC,EINTNET The predicted variable was: SEGRADES which was used as a measure of student performance.</p>
+              <p><em>Step 3: Correlation analysis between variables and choosing most suitable explanatory variables using ggpairs() </em></p>
+              <div class="figure">
+              <img src="explora_2.png" alt="" />
+              <p class="caption">Correlational Analysis</p>
               </div>
-              <div id="mini-competition-2" class="section level3">
-              <h3>Mini-Competition 2</h3>
+              <p><em>Step 4: Final Model selection</em></p>
+              <pre><code>SEGRADES = β0 + β1CHLDNT + β2RACEETH + β3P1SEX + β4PARGRADEX + β5DSBLTY + β6TTLHHINC + β7EINTNET
+              </code></pre>
+              <p>There was no correlation between the predictors, meaning they can be used within the model in determining the students performance (grades during a school year).</p>
+              </div>
+              <div id="major-findings" class="section level3">
+              <h3>Major Findings</h3>
+              <ol style="list-style-type: decimal">
+              <li><p>CHLDNT (internet usage by a child in learning activities), DSBLTY (Child with disability) and P1SEX (gender of parent at home) p-values do not show any significance in predicting the child performance from virtual learning.</p></li>
+              <li><p>EINTNET, TTLHHINC, PARGRADEX and RACEETH were therefore suitable in predicting the students who most benefited from virtual learning.</p></li>
+              <li><p>Most students were white non-hispanic, then hispanic, black non-hispanic, and asian.</p></li>
+              </ol>
+              <p>4.Higher education of parents or gardiuns (Vocational/technical education after high school or some college, College graduate, Graduate or professional school) benefited more.</p>
+              <ol start="5" style="list-style-type: decimal">
+              <li>Children from families with high total household income ($75,001 to $100,000, $100,001 to $150,000, $150,001 to $200,000) benefited more.</li>
+              </ol>
+              </div>
+              <div id="conclusion" class="section level3">
+              <h3>Conclusion</h3>
+              <p>Majority of the students who benefited did not have online classes. This means, most of the successful child’s parents preferred child interaction with teachers.</p>
+              </div>
+              <div id="mini-competition-2-classification" class="section level3">
+              <h3>Mini-Competition 2: Classification</h3>
               </div>
               <div id="project-3" class="section level3">
               <h3>Project 3</h3>

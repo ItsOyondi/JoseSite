@@ -707,7 +707,11 @@
             <p><strong>Main Aim: To evaluate the relationship between parent/guradian involvement in student’s education and performance</strong></p>
             <p>The following are the steps we used in completing this project.</p>
             <p><em>Step 1: Exploratory data analysis</em></p>
-            <p>We created different visualizations to examine the distribution of responses on school preferences, mode of learning such as in-person and virtual classes and others as shown in the screenshot below: <img src="explora_1.png" alt="Parent involvement and virtual learning" /></p>
+            <p>We created different visualizations to examine the distribution of responses on school preferences, mode of learning such as in-person and virtual classes and others as shown in the screenshot below:</p>
+            <div class="figure">
+            <img src="explora_1.png" alt="" />
+            <p class="caption">Parent involvement and virtual learning</p>
+            </div>
             <p><em>Step 2:Choosing the dependent and independent variables</em></p>
             <p>There were multiple variables, however, we selected the following as the independent variables for exploration and testing the linear model: CHLDNT, RACEETH, P1SEX, PARGRADEX, DSBLTY, TTLHHINC,EINTNET The predicted variable was: SEGRADES which was used as a measure of student performance.</p>
             <p><em>Step 3: Correlation analysis between variables and choosing most suitable explanatory variables using ggpairs() </em></p>
@@ -738,12 +742,47 @@
             </div>
             <div id="mini-competition-2-classification" class="section level3">
             <h3>Mini-Competition 2: Classification</h3>
+            <p><strong>Main Aim: To predict future inventory needs for a company based on products from previous item sales</strong></p>
+            <p><em>Step 1: Data cleaning</em></p>
+            <p>Due to the huge variation on items sold for each product, we tried different item numbers and finally settled in selecting items that have sales greater than 1000, to enhance the accuracy of the prediction model.</p>
+            <p><em>Step 2: Correlational analysis</em></p>
+            <ul>
+            <li>Correlational analysis is important in statistical analysis and regression to help establish whether there is a relationship between the independent variables. If some independent variables have a strong correlation, then the model might not be accurate in generating predictions possibly due to overfitting. Hence, forward or backward elimination can be done at this stage to eliminate one of the variables that are correlated to enhance the reliability and accuracy of the model.</li>
+            <li>Establishing correlation between the independent variables and response variable.</li>
+            <li>No correlation among the variables was noted</li>
+            </ul>
+            <p><em>Step 3: Time series analysis</em></p>
+            <p>Since the objective of this project was to predict the future inventory needs, based on historical data, time series analysis was necessary to examine the trend of sales and observe patterns. - Time series analysis indicated that an unstable trend of the total sales with the highest recorded on week 20</p>
+            <div class="figure">
+            <img src="explora_3.png" alt="" />
+            <p class="caption">Item Sales Time Series Analysis</p>
             </div>
-            <div id="project-3" class="section level3">
-            <h3>Project 3</h3>
+            <ul>
+            <li>The total sales were not normally distributed as shown below.</li>
+            </ul>
+            <div class="figure">
+            <img src="explora_4.png" alt="" />
+            <p class="caption">Items sold distribution</p>
             </div>
-            <div id="project-4" class="section level3">
-            <h3>Project 4</h3>
+            <p><em>Step 4: Data preparation and modeling</em></p>
+            <ul>
+            <li><p>Due to the significant differences in maximum and minimum items sold, we selected items that had more than 1000 sales to fit and train the model.</p></li>
+            <li><p>We selected items with at least 500 sales but the model did not converge due to sparsity - there were many weeks that had zero sales so we increased the value to 1000.</p></li>
+            <li><p>We used Poisson regression model to generate predictions.</p></li>
+            <li><p>Final predictions is a csv file found on: <a href="https://github.com/ItsOyondi/activity08-mini-competition/blob/main/competition-files/inventory_needs.csv">Final Predictions</a></p></li>
+            </ul>
+            <p><em>Step 5: Model selection and performance evaluation</em></p>
+            <ul>
+            <li><p>Unlike the multiple linear regression model that uses multiple variables to show the relationship between dependent and independent variables, multiple logistic regression uses multiple independent variables to predict change of a single variable and the outputs are either true or false (categorical). Hence, multiple logistic regression models could not be used in this project as we predict future inventory needs, whereby the expected output was calculations on how many items are needed in future (continuous dependent variable).</p></li>
+            <li><p>As noted in the exploratory distribution analysis, the data was not normally distributed. Hence, Gaussian generalized linear model (GLM) was not suitable for this project because it is appropriate for predicting the outputs of a response variable that is continuous and normally distributed.</p></li>
+            </ul>
+            <p>The overall performance of the model in generating predictions was evaluated by calculating the mean absolute error between the predicted and actual values.</p>
+            <p><em>Conclusions</em></p>
+            <p>The overall performance metric of 101.8706 (e.g., average MAE) provides an indication of the average absolute difference between the actual sales data and the predicted sales values across all selected products. Furthermore, it indicates that, on average, the predictions made by the Poisson regression model differ from the actual total sales values by approximately 101.8706 units.</p>
+            </div>
+            <div id="probability-as-a-foundation-of-statistical-modeling" class="section level3">
+            <h3>Probability as a foundation of statistical modeling</h3>
+            <p>Based on the previous competitions above, probability was significantly helpful in quantifying uncertainty, especially on predicting outcomes based on available data. Probability helps explain the likelihood of different results/outputs emerging in various situations. For instance, in the second mini-competition, the predicted inventory needs for the company is based on the assumption that if we use items that had more than 1000 sales, then some products will be needed more than others in the future sales. However, if we reduce the number of items sold to 500, the predicted outcomes are different from the previous predictions. Additionally, probability plays a key role in statistical inference especially in hypothesis testing. For instance, in building statistical models and assessing performance, significance value (p-value) and confidence level - which in this case act as probability values help make statistical inferences from data. Finally, even in assessing the maximum likelihood of particular data falling in a specific group is made possible through the probability values such as in the case of models such as K-nearest neighbors.</p>
             </div>
             </div>
           </div>
@@ -796,7 +835,11 @@
               <p><strong>Main Aim: To evaluate the relationship between parent/guradian involvement in student’s education and performance</strong></p>
               <p>The following are the steps we used in completing this project.</p>
               <p><em>Step 1: Exploratory data analysis</em></p>
-              <p>We created different visualizations to examine the distribution of responses on school preferences, mode of learning such as in-person and virtual classes and others as shown in the screenshot below: <img src="explora_1.png" alt="Parent involvement and virtual learning" /></p>
+              <p>We created different visualizations to examine the distribution of responses on school preferences, mode of learning such as in-person and virtual classes and others as shown in the screenshot below:</p>
+              <div class="figure">
+              <img src="explora_1.png" alt="" />
+              <p class="caption">Parent involvement and virtual learning</p>
+              </div>
               <p><em>Step 2:Choosing the dependent and independent variables</em></p>
               <p>There were multiple variables, however, we selected the following as the independent variables for exploration and testing the linear model: CHLDNT, RACEETH, P1SEX, PARGRADEX, DSBLTY, TTLHHINC,EINTNET The predicted variable was: SEGRADES which was used as a measure of student performance.</p>
               <p><em>Step 3: Correlation analysis between variables and choosing most suitable explanatory variables using ggpairs() </em></p>
@@ -827,12 +870,47 @@
               </div>
               <div id="mini-competition-2-classification" class="section level3">
               <h3>Mini-Competition 2: Classification</h3>
+              <p><strong>Main Aim: To predict future inventory needs for a company based on products from previous item sales</strong></p>
+              <p><em>Step 1: Data cleaning</em></p>
+              <p>Due to the huge variation on items sold for each product, we tried different item numbers and finally settled in selecting items that have sales greater than 1000, to enhance the accuracy of the prediction model.</p>
+              <p><em>Step 2: Correlational analysis</em></p>
+              <ul>
+              <li>Correlational analysis is important in statistical analysis and regression to help establish whether there is a relationship between the independent variables. If some independent variables have a strong correlation, then the model might not be accurate in generating predictions possibly due to overfitting. Hence, forward or backward elimination can be done at this stage to eliminate one of the variables that are correlated to enhance the reliability and accuracy of the model.</li>
+              <li>Establishing correlation between the independent variables and response variable.</li>
+              <li>No correlation among the variables was noted</li>
+              </ul>
+              <p><em>Step 3: Time series analysis</em></p>
+              <p>Since the objective of this project was to predict the future inventory needs, based on historical data, time series analysis was necessary to examine the trend of sales and observe patterns. - Time series analysis indicated that an unstable trend of the total sales with the highest recorded on week 20</p>
+              <div class="figure">
+              <img src="explora_3.png" alt="" />
+              <p class="caption">Item Sales Time Series Analysis</p>
               </div>
-              <div id="project-3" class="section level3">
-              <h3>Project 3</h3>
+              <ul>
+              <li>The total sales were not normally distributed as shown below.</li>
+              </ul>
+              <div class="figure">
+              <img src="explora_4.png" alt="" />
+              <p class="caption">Items sold distribution</p>
               </div>
-              <div id="project-4" class="section level3">
-              <h3>Project 4</h3>
+              <p><em>Step 4: Data preparation and modeling</em></p>
+              <ul>
+              <li><p>Due to the significant differences in maximum and minimum items sold, we selected items that had more than 1000 sales to fit and train the model.</p></li>
+              <li><p>We selected items with at least 500 sales but the model did not converge due to sparsity - there were many weeks that had zero sales so we increased the value to 1000.</p></li>
+              <li><p>We used Poisson regression model to generate predictions.</p></li>
+              <li><p>Final predictions is a csv file found on: <a href="https://github.com/ItsOyondi/activity08-mini-competition/blob/main/competition-files/inventory_needs.csv">Final Predictions</a></p></li>
+              </ul>
+              <p><em>Step 5: Model selection and performance evaluation</em></p>
+              <ul>
+              <li><p>Unlike the multiple linear regression model that uses multiple variables to show the relationship between dependent and independent variables, multiple logistic regression uses multiple independent variables to predict change of a single variable and the outputs are either true or false (categorical). Hence, multiple logistic regression models could not be used in this project as we predict future inventory needs, whereby the expected output was calculations on how many items are needed in future (continuous dependent variable).</p></li>
+              <li><p>As noted in the exploratory distribution analysis, the data was not normally distributed. Hence, Gaussian generalized linear model (GLM) was not suitable for this project because it is appropriate for predicting the outputs of a response variable that is continuous and normally distributed.</p></li>
+              </ul>
+              <p>The overall performance of the model in generating predictions was evaluated by calculating the mean absolute error between the predicted and actual values.</p>
+              <p><em>Conclusions</em></p>
+              <p>The overall performance metric of 101.8706 (e.g., average MAE) provides an indication of the average absolute difference between the actual sales data and the predicted sales values across all selected products. Furthermore, it indicates that, on average, the predictions made by the Poisson regression model differ from the actual total sales values by approximately 101.8706 units.</p>
+              </div>
+              <div id="probability-as-a-foundation-of-statistical-modeling" class="section level3">
+              <h3>Probability as a foundation of statistical modeling</h3>
+              <p>Based on the previous competitions above, probability was significantly helpful in quantifying uncertainty, especially on predicting outcomes based on available data. Probability helps explain the likelihood of different results/outputs emerging in various situations. For instance, in the second mini-competition, the predicted inventory needs for the company is based on the assumption that if we use items that had more than 1000 sales, then some products will be needed more than others in the future sales. However, if we reduce the number of items sold to 500, the predicted outcomes are different from the previous predictions. Additionally, probability plays a key role in statistical inference especially in hypothesis testing. For instance, in building statistical models and assessing performance, significance value (p-value) and confidence level - which in this case act as probability values help make statistical inferences from data. Finally, even in assessing the maximum likelihood of particular data falling in a specific group is made possible through the probability values such as in the case of models such as K-nearest neighbors.</p>
               </div>
               </div>
             </div>
